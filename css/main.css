@@ -115,7 +115,7 @@ html
 
 .navegacion li li
 {
-    padding:0 0.5em;
+    padding:0.2em 0.5em;
     border-top:1px solid #777;
     border-top:1px solid rgba(0,0,0,0.1);
 }
@@ -143,6 +143,7 @@ html
     border-bottom-right-radius:1em;
     display: none;
     position:absolute;
+
 }
 .navegacion a
 {
@@ -156,11 +157,21 @@ html
     color:#fff;
     text-shadow:1px 2px 3px rgba(0,0,0,0.5);
 }
+
 .navegacion li:hover > ul
 {
     display: block;
 }
 
+.navegacion ul ul li:hover
+{
+    background: rgba(0,0,0,0.5);
+}
+
+.navegacion ul ul li:last-child:hover
+{
+    border-bottom-right-radius:1em;
+}
 /* Últimos Talleres */
 
 .barra
